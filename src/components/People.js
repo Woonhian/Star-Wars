@@ -12,7 +12,7 @@ const People = () => {
   useEffect(() => {
     const fetchPeople = async () => {
       setIsLoading(true);
-      const results = await Axios(`https://swapi.dev/api/people/${id}`);
+      const results = await Axios(`https://swapi.dev/api/people/${id}/`);
       setPeople(results.data);
       setIsLoading(false);
     };
